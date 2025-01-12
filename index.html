@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliane Stephan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-primary: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: clamp(1rem, 5vw, 4rem);
+            color: #333;
+            background-color: white;
+            font-size: clamp(1rem, 1rem + 0.2vw, 1.125rem);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .header {
+            display: grid;
+            grid-template-columns: minmax(240px, 280px) 1fr;
+            gap: clamp(2rem, 4vw, 3rem);
+            align-items: start;
+            margin-bottom: clamp(1rem, 3vw, 3rem);
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
+        }
+        
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin: clamp(1rem, 2vw, 2.5rem) 0;
+        }
+        
+        h1 {
+            color: #1e1e1e;
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            color: #1e1e1e;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            margin: 0 0 1rem 0;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 0rem;
+            padding-left: 1.0rem;
+            position: relative;
+        }
+        
+        li::before {
+            content: "•";
+            color: #000000;
+            position: absolute;
+            left: 0;
+        }
+        
+        .publication {
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: min(280px, 70%);
+                margin: 0 auto;
+            }
+
+            .header-content {
+                align-items: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            li {
+                padding-left: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+
+            .profile-img {
+                width: min(240px, 80%);
+            }
+
+            li {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 1rem;
+            }
+
+            .social-links a {
+                text-decoration: none;
+                color: #333;
+            }
+        }
+
+        /* Add this media query to make the image slightly larger on mobile */
+        @media (max-width: 640px) {
+            .profile-img {
+                width: min(300px, 80%);
+            }
+        }
+
+        /* Add this media query to make the image slightly smaller on web */
+        @media (min-width: 641px) {
+            .profile-img {
+                width: min(250px, 70%);
+            }
+        }
+
+    .subtle-link {
+        text-decoration: underline;
+        color: inherit;
+    }
+
+    .subtle-link:hover {
+        color: inherit;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="headshot.jpg" alt="Profile Photo" class="profile-img">
+        <div class="header-content">
+            <h1>Juliane Stephan</h1>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/julianestephan">LinkedIn</a>
+                <a href="https://transformation-in-the-digital-age.beehiiv.com/">Newsletter</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <ul>
+		<li>Experienced PE operator and catalyst for sustainable business transformations</li>
+		<li>Hands-on leader specialized in unlocking value through ops excellence and digital transformation</li>
+		
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Background</h2>
+		<p> I am currently an Operating Partner at BayPine. BayPine seeks to be the private equity partner of choice for market-leading companies in core industries 			that want to unlock their long-term potential through digital transformation, driving innovation, and accelerating sustainable growth. I architect and execute value-creation strategies to accelerate the growth of our portfolio companies. I am a hands-on leader that specializes in unlocking value through operational excellence and digital transformation. Starting with the due diligence process, this includes close collaboration with portfolio company leadership on strategy, budgets, and talent - which continues through the hold period until exit. With a proven track record in private equity and consulting, I have driven significant EBITDA growth, scaled businesses, and delivered sustainable impact across diverse sectors including multi-site healthcare, industrial manufacturing, distribution, and technology in North America, Europe, and Asia. </p>
+
+<p> Previously, I was a Principal at Incline Equity Partners, a middle market private equity firm headquartered in Pittsburgh and was one of the first employees on the Catalyst team. Prior to that, I was an Associate Partner at Bain & Company where I had the pleasure to collaborate with the World Economic Forum on "Circular Transformation of Industries" and help develop Bain's sustainable and transparent supply chain consulting offering.  Before joining Bain, I was with PwC Strategy& for over 8 years where I built the Digital Operations integrated solution offering, and co-led the Smart Factory team in the US. </p>
+
+<p> To drive impact, I lean on my passion for uncovering hidden behavior drivers, fostering cross-functional collaboration, approaching complex problems with a first-principles mindset, and helping teams and individuals to maximize their impact. I seek to combine rigorous analysis, balancing system-wide perspectives with detailed micro-level insights, with creative solutions to drive outcomes. I find it very rewarding to partner with driven executives and founders who want to accelerate the growth of their business and to support them with my (digital) transformation expertise. </p>
+
+<p> I studied the CEMS Master in International Management at the Vienna University of Economics and Business, Austria, and the University of Sydney, Australia. Prior to this, I completed an interdisciplinary Bachelor degree in Corporate Management & Economics at Zeppelin University in Friedrichshafen, Germany. I have lived and worked in the USA, Germany, Austria, Australia, Spain, Japan, and China. </p>
+
+<p> Originally from Germany, I now live in Miami with my partner. I am a passionate equestrian and am competing in show jumping with my mare Sweet Caroline. </p>
+	</div>
+
+<div class="section">
+        <h2>Speaking</h2>
+<ul>
+  <li>Panel, Creating Value through High Impact Functional Leadership, Operating Partner Forum, Private Equity International, October 22, 2024</li>
+<li>Panel, Creating Value in Your Portfolio, Sahar Gender Equity Summit, July 15, 2024</li>
+<li>Guest Speaker, Creating Value through Corporate Intervention, Harvard Business School's PE Projects and Ecosystems Course, January 31, 2024</li>
+<li>Panel, Women in Technology Investing, Harvard Business School's 9th Annual Women in Investing Summit, November 15, 2023</li>
+<li>Panel, Rapid Acceleration Value Creation Plans for Mid-Market, Operating Partner Forum, Private Equity International, June 2, 2022</li>
+<li>Podcast Guest, Episode 51 - Incline Equity Partners, Private Equity Podcast, November 9th, 2021</li>
+<li>Panel, Smart Factories in the Textile and Apparel Supply Chain, WTIN - World Textile Information Network, October 23, 2020</li>
+<li>Webinar, New Manufacturing - What Industrials can learn from Silicon Valley, DigiDay SIHK zu Hagen, September 30, 2020</li>
+<li>Panel, New Manufacturing, GACC WEST - Representative of German Business, August 11, 2020</li>
+<li>Panel, Reigniting the Manufacturing Workforce After COVID-19, Meritize, May 20, 2020</li>
+<li>Presentation, Strategy that works: How winning companies close the strategy-to-execution gap, Textile Business Futures in Amsterdam, October 2019</li>
+<li>Presentation, Industry 4.0: How to turn shop floor data into business value, Innovate Textile & Apparel Europe 2019, October 2019</li>
+<li>Webinar, 4IR from Buzzword to Reality: Smart Factory Adoption Rates – Best Practices and Leading Technologies, Industry Week, July 2019</li>
+<li>Presentation, Smart Factory: Developing solutions with a human-centric approach, WTIN Textile 4.0 Conference in Raleigh, May 2019</li>
+<li>Panel, Future of Manufacturing: New Technologies shaping industrial transformation, Invest in Bavaria, May 10, 2019</li>
+<li>Webinar, Digitizing your supply chain to be Fit For Growth, PwC Webcast, February 2019</li>
+<li>Webinar, The No-Excuses Way for Manufacturers to Win in a Digital World, Industry Week, February 2019</li>
+<li>Webinar, Transforming manufacturing for growth: Gaining a competitive advantage with IoT, Industry Week, October 2018</li>
+<li>Keynote, Workforce of the Future: How Emerging Technologies are Transforming Manufacturing, Colorado Advanced Manufacturing Association (CAMA), February 27, 2018</li>
+  </ul>
+	</div>
+
+
+	<div class="section">
+        <h2>Publications</h2>
+<ul>
+  <li> <a href="https://www.scmr.com/article/how_to_build_a_more_adaptive_supply_chain3">How to Build a More Adaptive Supply Chain,</a> Supply Chain Management Review, June 2021</li> 
+<li> <a href="https://www.bain.com/insights/supply-chains-are-looking-up-literally/?utm_medium=social_advocacy&utm_source=None-dysi&utm_content=f201a28c-b429-45c7-b994-caad562a6bdc&utm_term=0">Digital Supply Chain Architecture: Less ERP, More Cloud,</a> Bain & Company, May 2021</li>
+<li> <a href="https://www.weforum.org/stories/2021/01/digital-traceability-supply-chains-sustainable/">3 ways traceability can fulfill the sustainability promise,</a> World Economic Forum, January 2021</li>
+<li> <a href="https://www.industryweek.com/leadership/strategic-planning-execution/article/21146334/lessons-from-silicon-valley">Lessons from Silicon Valley that Translate to Manufacturing,</a> IndustryWeek, October 2020</li>
+<li> <a href="https://www.bain.com/insights/resilient-sustainable-supply-chains/">How to Trace a Path to Resilient, Sustainable Supply Chains,</a> Bain & Company, October 2020</li>
+<li> <a href="https://www3.weforum.org/docs/WEF_Visibility_Traceability_Twin_Engines_Sustainable_2020.pdf">Visibility and Traceability The Twin Engines of Sustainable Supply Chains,</a> World Economic Forum, October 2020</li>
+<li> <a href="https://www.weforum.org/stories/2020/09/4-ways-industry-make-supply-chains-sustainable/">4 ways industry can make supply chains more sustainable,</a> World Economic Forum, October 2020</li>
+<li>Navigating the fourth industrial revolution to the bottom line, PwC and Manufacturing Institute Study, June 2019</li>
+<li>A Day in the Life of an Industrial IoT-Enabled Smart Factory, Sierra Wireless, April 2019</li>
+<li>Are you ready for the smart manufacturing revolution?, PwC Blog, November 2018</li>
+<li>Digital champions do not win alone, PwC, June 2018</li>
+<li>How manufacturers are leveraging technology to gain an edge, PwC, May 2018</li>
+<li>How manufacturers can take control of digitally transforming their workforce, PwC, May 2018</li>
+<li>PwC Global Digital Operations Study 2018 - Digital Champions, PwC Study, 2018</li>
+<li>Connected car report: Opportunities, risk, and turmoil on the road to autonomous vehicles: Building the connected car, PwC Study, 2016 October</li>
+</ul>
+    </div>
+</body>
+</html>
